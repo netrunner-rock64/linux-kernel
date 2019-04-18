@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 
-export KCPPFLAGS += -fno-pie -Wstringop-overflow=0 -Warray-bounds=0 -Wno-error=class-memaccess
+export CC = gcc-7
+export CXX = g++-7
+export KCPPFLAGS += -fno-pie -Wstringop-overflow=0 -Warray-bounds=0
 export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
 
