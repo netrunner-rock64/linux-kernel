@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 export KCPPFLAGS += -fno-pie -Wstringop-overflow=0 -Warray-bounds=0
-export CFLAGS += -Wno-error=sizeof-pointer-memaccess
+export KCFLAGS += -Wno-error=sizeof-pointer-memaccess
 export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
 export CC=gcc-7
