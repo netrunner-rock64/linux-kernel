@@ -2,7 +2,7 @@ Source: rock64-linux
 Section: kernel
 Priority: optional
 Maintainer: Scarlett Moore <sgmoore@kde.org>
-Build-Depends: debhelper (>=12), build-essential, bc, lzop, u-boot-tools, gcc-7, dpkg-dev
+Build-Depends: debhelper (>=12), build-essential, bc, lzop, u-boot-tools, dpkg-dev
 Standards-Version: 4.4.0
 Homepage: https://github.com/ayufan-rock64/linux-kernel
 
