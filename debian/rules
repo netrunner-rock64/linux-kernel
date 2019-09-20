@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 export KCPPFLAGS += -fno-pie -Wstringop-overflow=0 -Warray-bounds=0
-export KCFLAGS += -Wno-error=sizeof-pointer-memaccess
+export KCFLAGS = -Wno-error=sizeof-pointer-memaccess $(KCFLAGS)
 export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
 export CC=gcc-7
@@ -11,6 +11,7 @@ export CXX=g++-7
 	dh $@ --parallel
 
 override_dh_auto_configure:
+	dpkg-buildflags --query
 	$(MAKE) VERBOSE=1 rockchip_linux_defconfig
 	dh_auto_configure
 
