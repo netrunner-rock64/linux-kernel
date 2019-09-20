@@ -3,6 +3,8 @@
 export KCPPFLAGS += -fno-pie -Wstringop-overflow=0 -Warray-bounds=0 -Wno-error=sizeof-pointer-memaccess
 export DEB_BUILD_MAINT_OPTIONS = hardening=-relro
 export DH_VERBOSE = 1
+export CC=gcc-7
+export CXX=g++-7
 
 %:
 	dh $@ --parallel
