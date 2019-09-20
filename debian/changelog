@@ -1,3 +1,9 @@
+rock64-linux (4.4.193-1) UNRELEASED; urgency=medium
+
+  * New upstream release. 
+
+ -- Scarlett Moore <sgmoore@kde.org>  Fri, 20 Sep 2019 09:44:45 -0700
+
 rock64-linux (4.4-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
